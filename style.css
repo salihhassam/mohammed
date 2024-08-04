@@ -1,0 +1,216 @@
+/* التهيئة العامة */
+body {
+    font-family: 'Rakkas', sans-serif; /* الخط الأساسي للنصوص العامة */
+    margin: 0;
+    padding: 0;
+    background-color: #ddd7d7;
+    color: #333;
+    direction: rtl;
+    box-sizing: border-box; /* تأكد من حساب الهوامش والبُطانات في العرض والارتفاع */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* ترويسة الصفحة */
+header {
+    background: linear-gradient(135deg, #98a4b1, #00bfff);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.5rem;
+    width: 100%; /* تمتد الترويسة على العرض الكامل */
+}
+
+header h1 {
+    font-family: 'Amiri Quran', serif; /* الخط للعناوين في الترويسة */
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+
+/* تصميم قسم البطل */
+.hero {
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 5rem 1rem;
+    text-align: center;
+    background-blur: rgba(0, 0, 0, 0.3);
+    margin-bottom: 2.5rem;
+    width: 100%; /* تمتد قسم البطل على العرض الكامل */
+}
+
+.hero-content h2 {
+    font-family: 'Amiri Quran', serif; /* الخط للعناوين في قسم البطل */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-family: 'Rakkas', sans-serif; /* الخط للنصوص في قسم البطل */
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* تصميم باقي الأقسام */
+main {
+    padding: 2.5rem 1rem;
+    width: 100%; /* تمتد القسم الرئيسي على العرض الكامل */
+}
+
+section {
+    background-color: white;
+    margin: 1.25rem auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    text-align: right;
+    margin-bottom: 2.5rem;
+}
+
+section h2 {
+    font-family: 'Amiri Quran', serif; /* الخط للعناوين في الأقسام */
+    font-size: 2rem;
+    color: #1e90ff;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    font-family: 'Rakkas', sans-serif; /* الخط للنصوص داخل الأقسام */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* تصميم قسم المهارات والهوايات */
+#skills {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 1.25rem auto;
+    max-width: 900px;
+    text-align: right;
+}
+
+/* العنوان الفرعي */
+#skills h2 {
+    font-family: 'Amiri Quran', serif; /* الخط للعناوين الفرعية */
+    font-size: 2rem;
+    color: #1e90ff;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+/* قائمة المهارات والهوايات */
+#skills ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#skills ul li {
+    background: #f0f0f0;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    font-family: 'Rakkas', sans-serif; /* الخط للنصوص داخل القائمة */
+}
+
+/* تصميم الأزرار */
+button {
+    padding: 0.75rem 1.25rem;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Rakkas', sans-serif;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #00bfff;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* تذييل الصفحة */
+footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 1rem 1.25rem;
+    position: relative;
+    width: 100%;
+    margin-top: 2.5rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+
+/* الأجهزة اللوحية */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero {
+        padding: 3rem 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    section {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* الهواتف المحمولة */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem 0.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero {
+        padding: 2rem 0.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    section {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    button {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+}
